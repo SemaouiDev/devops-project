@@ -64,8 +64,6 @@ def parse(document: str) -> list[ChallengeDef]:
 
     if data is None:
         return []
-    if data is None:
-        return []
     if not isinstance(data, dict) or "challenges" not in data:
         raise ChallengeFileError("top level must be a mapping with a 'challenges' key")
 
